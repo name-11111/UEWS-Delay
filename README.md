@@ -13,11 +13,11 @@
 
 ## 注意
 
-UEWS仅支持对日本NIDE公开的地震站数据信息进行震中计算，且最终震中应以官方公布为准
+UEWS仅支持对日本NIED公开的地震站数据信息进行震中计算，且最终震中应以官方公布为准
 
 本程序使用Voronoi图的方法进行计算，由于算法问题效率并不高且精度有待提高呐
 
-NIDE测站数据及位置来源于 https://www.kyoshin.bosai.go.jp/kyoshin/db/index_en.html?all
+NIED测站数据及位置来源于 https://www.kyoshin.bosai.go.jp/kyoshin/db/index_en.html?all
 
 UEWS 目前并不稳定、完善，随时可能崩溃，若遇到问题，欢迎提交Issue。
 
@@ -30,14 +30,14 @@ pip install -r requirements.txt
 ```
 
 ### 运行架空模拟
-注：此无需提前将NIDE下载的测站.tar文件数据放在程序同级文件夹中，且无需解压
+注：此无需提前将NIED下载的测站.tar文件数据放在程序同级文件夹中，且无需解压
 ```
 python main.py
 ```
 访问网页后左下角点击"上传"，将下载的.tar文件上传
 
 ### 仅计算震中
-注：此必须提前将NIDE下载的测站.tar文件数据放在程序同级文件夹中，但无需解压
+注：此必须提前将NIED下载的测站.tar文件数据放在程序同级文件夹中，但无需解压
 ```
 python CMD_main.py
 ```
